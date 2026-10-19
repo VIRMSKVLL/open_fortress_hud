@@ -1,0 +1,79 @@
+//===========================================
+// OVERHEAL ANIMATION
+//===========================================
+
+//Health Bonus Pulse
+event HudHealthBonusPulse
+{
+	// Hide neutral status
+	Animate	PlayerStatusHealthImageBG			Alpha		"0"		Linear 0.0 0.2
+	// Text color
+	Animate PlayerStatusHealthValue         	FgColor 	"245 202 159 255"    		Linear 	0.0 0.2
+	// Main image
+	Animate	PlayerStatusHealthImageOverheal		Alpha		"255"		Linear 0.0 0.2
+	// Alert image
+	Animate	PlayerStatusHealthImageOverhealAlert 	Alpha		"255"		Linear 0.0 0.2
+	Animate	PlayerStatusHealthImageOverhealAlert 	Alpha		"0"			Linear 0.2 0.4
+	// Loop event
+	RunEvent HudHealthBonusPulseLoop	0.4
+}
+
+// call to loop HudHealthBonusPulse
+event HudHealthBonusPulseLoop
+{
+	RunEvent HudHealthBonusPulse 0.0
+}
+
+event HudHealthBonusPulseStop
+{
+	// Show neutral status
+	Animate	PlayerStatusHealthImageBG			Alpha		"255"		Linear 0.0 0.2
+	// Reset text color
+	Animate PlayerStatusHealthValue         	FgColor 	"230 248 239 255" 						Accel 	0.0	0.0
+	// Remove images
+	Animate	PlayerStatusHealthImageOverheal			Alpha		"0"		Linear 0.0 0.2
+	Animate	PlayerStatusHealthImageOverhealAlert		Alpha		"0"		Linear 0.0 0.2
+	// Stop alert flashing
+	StopEvent HudHealthBonusPulse 0.0
+	StopEvent HudHealthBonusPulseLoop 0.0
+}
+
+//===========================================
+// LOW HEALTH ANIMATION
+//===========================================
+
+//Health Dying Pulse
+event HudHealthDyingPulse
+{
+	// Hide neutral status
+	Animate	PlayerStatusHealthImageBG			Alpha		"0"		Linear 0.0 0.2
+	// Text color
+	Animate PlayerStatusHealthValue         	FgColor 	"19 30 35 255"          	Linear	0.0 0.2
+	// Main image
+	Animate	PlayerStatusHealthImageLowHP 	Alpha		"255"		Linear 0.0 0.075
+	// Alert image
+	Animate	PlayerStatusHealthImageLowHPAlert 	Alpha		"255"		Linear 0.0 0.075
+	Animate	PlayerStatusHealthImageLowHPAlert 	Alpha		"0"			Linear 0.125 0.075
+
+	RunEvent HudHealthDyingPulseLoop	0.25
+}
+
+// call to loop HudHealthDyingPulse
+event HudHealthDyingPulseLoop
+{
+	RunEvent HudHealthDyingPulse 0.0
+}
+
+event HudHealthDyingPulseStop
+{
+	// Show neutral status
+	Animate	PlayerStatusHealthImageBG			Alpha		"255"		Linear 0.0 0.2
+	// Reset text color
+	Animate PlayerStatusHealthvalue         	FgColor 	"230 248 239 255" 						Accel 	0.0	0.0
+	// Remove images
+	Animate	PlayerStatusHealthImageLowHP			Alpha		"0"		Linear 0.0 0.2
+	Animate	PlayerStatusHealthImageLowHPAlert		Alpha		"0"		Linear 0.0 0.2
+	// Stop alert flashing
+	StopEvent HudHealthDyingPulse 0.0
+	StopEvent HudHealthDyingPulseLoop 0.0
+}

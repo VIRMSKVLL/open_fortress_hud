@@ -57,7 +57,7 @@
 		"labelText"		"%PlayingToLabel%"
 		"textAlignment"	"center"
 		"xpos"			"c-100"
-		"ypos"			"-8"
+		"ypos"			"26"
 		"zpos"			"20"
 		"wide"			"200"
 		"tall"			"50"

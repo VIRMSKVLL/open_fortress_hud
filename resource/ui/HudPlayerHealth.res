@@ -2,6 +2,10 @@
 {
 	"HudPlayerHealth"
 	{
+		// percent of health left to show warning at
+		"HealthDeathWarning"	"0.45"	  // "0.65" = 100hp
+
+
 		"ControlName"	"EditablePanel"
 		"fieldName"		"HudPlayerHealth"
 		"xpos"		"0"
@@ -14,9 +18,10 @@
 		"visible"			"1"
 		"enabled"			"1"
 		"HealthBonusPosAdj"	"0"
-		"HealthDeathWarning"	"0.49"
 		"HealthDeathWarningColor"	"255 0 0 255"
 	}
+
+
 	"PlayerStatusHealthImageBG"
 	{
 		"ControlName"	"ImagePanel"
@@ -35,6 +40,8 @@
 		"image"		"virmilla"
 		"scaleImage"	"1"
 	}
+
+
 	"PlayerStatusHealthImageLowHP"
 	{
 		"ControlName"	"ImagePanel"
@@ -56,15 +63,38 @@
 		"scaleImage"	"1"
 		"Alpha"			"0"
 	}
-	"PlayerStatusHealthBonusImage"
+	"PlayerStatusHealthImageLowHPAlert"
 	{
 		"ControlName"	"ImagePanel"
-		"fieldName"		"PlayerStatusHealthBonusImage"
+		"fieldName"		"PlayerStatusHealthImageLowHPAlert"
+
 		"xpos"		"95"
 		"xpos_minmode"		"50"
 		"ypos"		"120"
 		"ypos_minmode"		"75"
-		"zpos"		"5"
+		"zpos"		"6"
+		"wide"		"171"
+		"wide_minmode"		"171"
+		"tall"		"171"
+		"tall_minmode"		"171"
+		"visible"		"1"
+		"enabled"		"1"
+
+		"image"		"virmillalowhpalert"
+		"scaleImage"	"1"
+		"Alpha"			"0"
+	}
+
+
+	"PlayerStatusHealthImageOverheal"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"PlayerStatusHealthImageOverheal"
+		"xpos"		"95"
+		"xpos_minmode"		"50"
+		"ypos"		"120"
+		"ypos_minmode"		"75"
+		"zpos"		"4"
 		"wide"		"171"
 		"wide_minmode"		"120"
 		"tall"		"171"
@@ -74,14 +104,38 @@
 
 		"image"			"virmillaoverheal"
 		"scaleImage"	"1"
+		"Alpha"			"0"
 	}
+	"PlayerStatusHealthImageOverhealAlert"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"PlayerStatusHealthImageOverhealAlert"
+		"xpos"		"95"
+		"xpos_minmode"		"50"
+		"ypos"		"120"
+		"ypos_minmode"		"75"
+		"zpos"		"2"
+		"wide"		"171"
+		"wide_minmode"		"120"
+		"tall"		"171"
+		"tall_minmode"		"120"
+		"visible"		"1"
+		"enabled"		"1"
+
+		"image"			"virmillaoverhealalert"
+		"scaleImage"	"1"
+		"Alpha"			"0"
+	}
+
+
+
 	"PlayerStatusHealthValue"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValue"
-		"xpos"		"172"
+		"xpos"		"160"
 		"xpos_minmode"		"140"
-		"ypos"		"146"
+		"ypos"		"155"
 		"ypos_minmode"		"133"
 		"zpos"		"5"
 		"wide"			"100"
@@ -99,9 +153,9 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValueShadow"
-		"xpos"		"172"
+		"xpos"		"160"
 		"xpos_minmode"		"140"
-		"ypos"		"157"
+		"ypos"		"166"
 		"ypos_minmode"		"144"
 		"wide"			"100"
 		"tall"			"40"
