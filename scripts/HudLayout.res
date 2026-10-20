@@ -435,7 +435,7 @@
 		"fieldName" "HudZoom"
 		"visible" "1"
 		"enabled" "1"
-		"Circle1Radius" "180"
+		"Circle1Radius" "66"
 		"Circle2Radius"	"74"
 		"DashGap"	"16"
 		"DashHeight" "4"
