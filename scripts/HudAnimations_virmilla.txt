@@ -5,8 +5,11 @@
 //Health Bonus Pulse
 event HudHealthBonusPulse
 {
-	// Hide neutral status
-	Animate	PlayerStatusHealthImageBG			Alpha		"0"		Linear 0.0 0.2
+	// Hide other image status's
+	Animate	PlayerStatusHealthImageBG				Alpha		"0"		Linear 0.0 0.2
+	// Hide dying status in case of straight jump
+	Animate	PlayerStatusHealthImageLowHP			Alpha		"0"		Linear 0.0 0.2
+	Animate	PlayerStatusHealthImageLowHPAlert		Alpha		"0"		Linear 0.0 0.2
 	// Text color
 	Animate PlayerStatusHealthValue         	FgColor 	"245 202 159 255"    		Linear 	0.0 0.2
 	// Main image
@@ -29,7 +32,7 @@ event HudHealthBonusPulseStop
 	// Show neutral status
 	Animate	PlayerStatusHealthImageBG			Alpha		"255"		Linear 0.0 0.2
 	// Reset text color
-	Animate PlayerStatusHealthValue         	FgColor 	"230 248 239 255" 						Accel 	0.0	0.0
+	Animate PlayerStatusHealthValue         	FgColor 	"230 248 239 255" 						Linear 0.0 0.2
 	// Remove images
 	Animate	PlayerStatusHealthImageOverheal			Alpha		"0"		Linear 0.0 0.2
 	Animate	PlayerStatusHealthImageOverhealAlert		Alpha		"0"		Linear 0.0 0.2
@@ -46,7 +49,10 @@ event HudHealthBonusPulseStop
 event HudHealthDyingPulse
 {
 	// Hide neutral status
-	Animate	PlayerStatusHealthImageBG			Alpha		"0"		Linear 0.0 0.2
+	Animate	PlayerStatusHealthImageBG					Alpha		"0"		Linear 0.0 0.2
+	// Hide overheal status in case of straight jump
+	Animate	PlayerStatusHealthImageOverheal				Alpha		"0"		Linear 0.0 0.2
+	Animate	PlayerStatusHealthImageOverhealAlert		Alpha		"0"		Linear 0.0 0.2
 	// Text color
 	Animate PlayerStatusHealthValue         	FgColor 	"19 30 35 255"          	Linear	0.0 0.2
 	// Main image
@@ -69,7 +75,7 @@ event HudHealthDyingPulseStop
 	// Show neutral status
 	Animate	PlayerStatusHealthImageBG			Alpha		"255"		Linear 0.0 0.2
 	// Reset text color
-	Animate PlayerStatusHealthvalue         	FgColor 	"230 248 239 255" 						Accel 	0.0	0.0
+	Animate PlayerStatusHealthvalue         	FgColor 	"230 248 239 255" 						Linear 0.0 0.2
 	// Remove images
 	Animate	PlayerStatusHealthImageLowHP			Alpha		"0"		Linear 0.0 0.2
 	Animate	PlayerStatusHealthImageLowHPAlert		Alpha		"0"		Linear 0.0 0.2
@@ -77,3 +83,24 @@ event HudHealthDyingPulseStop
 	StopEvent HudHealthDyingPulse 0.0
 	StopEvent HudHealthDyingPulseLoop 0.0
 }
+
+//===========================================
+// RESET ON DEATH
+//===========================================
+// Freezecam animation
+event HudSnapShotReminderIn
+{
+	// Respawn cleanup
+	StopEvent	HudHealthDyingPulse 0.0
+	StopEvent	HudHealthDyingPulseLoop 0.0
+	StopEvent 	HudHealthBonusPulseLoop 0.0
+
+	RunEvent 	HudHealthDyingPulseStop	0.0
+
+	// Original snapshot animation
+	Animate HudDamageIndicator DmgFullscreenColor	"255 0 0 0"		Linear 0.0 0.01
+	Animate ScreenshotPanelBG		Position	"c-83 13"	Spline 0.0 0.2
+	Animate ScreenshotIcon			Position	"c-80 5"	Spline 0.0 0.2
+	Animate ScreenshotLabel			Position	"c-43 27"	Spline 0.0 0.2
+}
+
