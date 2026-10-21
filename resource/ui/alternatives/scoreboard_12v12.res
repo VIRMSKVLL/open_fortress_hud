@@ -170,7 +170,7 @@
 		}
 	}
 	
-	"BlueTeamLabel"
+	"BlueTeamLabel_"
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"BlueTeamLabel"
@@ -197,7 +197,7 @@
 	"BlueTeamLabelDropshadow"
 	{
 		"ControlName"				"CExLabel"
-		"fieldName"					"BlueTeamLabel"
+		"fieldName"					"BlueTeamLabelDropshadow"
 		"font"						"VKillFontTiny"
 		"fgcolor" 					"0 0 0 255"
 		"labelText"					"%blueteamname%"
@@ -316,7 +316,7 @@
 		}
 	}
 	
-	"RedTeamLabel"
+	"RedTeamLabel_"
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"RedTeamLabel"
@@ -342,7 +342,7 @@
 	"RedTeamLabelDropshadow"
 	{
 		"ControlName"				"CExLabel"
-		"fieldName"					"RedTeamLabel"
+		"fieldName"					"RedTeamLabelDropshadow"
 		"font"						"VKillFontTiny"
 		"fgcolor" 					"0 0 0 255"
 		"labelText"					"%redteamname%"
