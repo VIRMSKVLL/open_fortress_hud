@@ -45,9 +45,9 @@ Scheme
 		"PartyMember6"	"255 133 255 255"
 		
 		"White"				"235 235 235 255"
-		"Red"				"192 28 0 140"
-		"RedSolid"			"192 28 0 255"
-		"Blue"				"0 28 162 140"
+		"Red"				"240 104 111 255"
+		"RedSolid"			"240 104 111 255"
+		"Blue"				"113 139 150 255"
 		"Yellow"			"251 235 202 255"
 		"TransparentYellow"	"251 235 202 140"
 		"BrightYellow"		"251 235 0 255"
@@ -1576,10 +1576,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"6"
-				"weight"	"400"
-				"additive"	"0"
+				"name" "gamefont"
+				"tall" "7"
 				"antialias" "1"
 			}
 		}
@@ -1587,12 +1585,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"8"
-				"tall_hidef"	"10"
-				"tall_lodef"	"14"
-				"weight"	"400"
-				"additive"	"0"
+				"name" "gamefont"
+				"tall" "8"
 				"antialias" "1"
 			}
 		}
@@ -1600,12 +1594,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"10"
-				"tall_hidef"	"12"
-				"tall_lodef"	"14"
-				"weight"	"400"
-				"additive"	"0"
+				"name" "gamefont"
+				"tall" "8"
 				"antialias" "1"
 			}
 		}
@@ -1613,76 +1603,54 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"14"
-				"weight"	"500"
-				"range"		"0x0000 0x007F"	//	Basic Latin
+				"name" "gamefont"
+				"tall" "8"
 				"antialias" "1"
-				"additive"	"0"
 			}
 		}
 		"ScoreboardMedium"
 		{
 			"1"
 			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"20"
-				"weight"	"500"
-				"range"		"0x0000 0x007F"	//	Basic Latin
+				"name" "gamefont"
+				"tall" "8"
 				"antialias" "1"
-				"additive"	"0"
 			}
 		}
 		"ScoreboardTeamName"
 		{
 			"1"
 			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"20"
-				"tall_hidef"	"24"
-				"tall_lodef"	"24"
-				"weight"	"500"
-				"range"		"0x0000 0x007F"	//	Basic Latin
+				"name" "gamefont"
+				"tall" "8"
 				"antialias" "1"
-				"additive"	"0"
 			}
 		}
 		"ScoreboardTeamCountNew"
 		{
 			"1"
 			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"14"
-				"weight"	"500"
-				"range"		"0x0000 0x007F"	//	Basic Latin
+				"name" "gamefont"
+				"tall" "8"
 				"antialias" "1"
-				"additive"	"0"
 			}
 		}
 		"ScoreboardTeamNameNew"
 		{
 			"1"
 			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"20"
-				"weight"	"500"
-				"range"		"0x0000 0x007F"	//	Basic Latin
+				"name" "gamefont"
+				"tall" "7"
 				"antialias" "1"
-				"additive"	"0"
 			}
 		}
 		"ScoreboardTeamNameLarge"
 		{
 			"1"
 			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"34"
-				"tall_hidef"	"38"
-				"tall_lodef"	"38"
-				"weight"	"500"
-				"range"		"0x0000 0x007F"	//	Basic Latin
+				"name" "gamefont"
+				"tall" "8"
 				"antialias" "1"
-				"additive"	"0"
 			}
 		}
 
@@ -1690,11 +1658,8 @@ Scheme
  		{
 			"1"
 			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"36"
-				"tall_hidef"	"48"
-				"weight"	"500"
-				"additive"	"0"
+				"name" "gamefont"
+				"tall" "8"
 				"antialias" "1"
 			}
 		}
@@ -1702,49 +1667,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"52"
-				"tall_lodef"		"80"
-				"range" 	"0x0000 0x00FF"
-				"weight"	"400"
-				"yres"		"1 599"
-				"antialias" "1"
-			}
-			"2"
-			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"72"
-				"tall_hidef"	"120"
-				"range" 	"0x0000 0x00FF"
-				"weight"	"400"
-				"yres"		"600 767"
-				"antialias" "1"
-			}
-			"3"
-			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"100"
-				"range" 	"0x0000 0x00FF"
-				"weight"	"400"
-				"yres"		"768 1023"
-				"antialias" "1"
-			}
-			"4"
-			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"140"
-				"range" 	"0x0000 0x00FF"
-				"weight"	"400"
-				"yres"		"1024 1199"
-				"antialias" "1"
-			}
-			"5"
-			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"180"
-				"range" 	"0x0000 0x00FF"
-				"weight"	"400"
-				"yres"		"1200 10000"
+				"name" "gamefont"
+				"tall" "8"
 				"antialias" "1"
 			}
 		}
@@ -1752,22 +1676,17 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"36"
-				"weight"	"500"
-				"range"		"0x0000 0x007F"	//	Basic Latin
+				"name" "gamefont"
+				"tall" "8"
 				"antialias" "1"
-				"additive"	"0"
 			}
 		}
 		"MatchSummaryStatsAndMedals"
 		{
 			"1"
 			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"14"
-				"weight"	"400"
-				"additive"	"0"
+				"name" "gamefont"
+				"tall" "8"
 				"antialias" "1"
 			}
 		}
@@ -1775,10 +1694,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"20"
-				"weight"	"400"
-				"additive"	"0"
+				"name" "gamefont"
+				"tall" "8"
 				"antialias" "1"
 			}
 		}
@@ -1786,10 +1703,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"14"
-				"weight"	"400"
-				"additive"	"0"
+				"name" "gamefont"
+				"tall" "8"
 				"antialias" "1"
 			}
 		}
@@ -1797,10 +1712,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"10"
-				"weight"	"400"
-				"additive"	"0"
+				"name" "gamefont"
+				"tall" "8"
 				"antialias" "1"
 			}
 		}
@@ -1808,10 +1721,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"7"
-				"weight"	"400"
-				"additive"	"0"
+				"name" "gamefont"
+				"tall" "8"
 				"antialias" "1"
 			}
 		}
@@ -1820,12 +1731,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"10"
-				"tall_hidef"	"12"
-				"tall_lodef"	"14"
-				"weight"	"400"
-				"additive"	"0"
+				"name" "gamefont"
+				"tall" "8"
 				"antialias" "1"
 			}
 		}
@@ -1834,129 +1741,27 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"12"
-				"weight"	"700"
-				"yres"		"480 599"
-				"dropshadow"	"0"
-			}
-			"2"
-			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"13"
-				"weight"	"700"
-				"yres"		"600 767"
-				"dropshadow"	"0"
-			}
-			"3"
-			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"14"
-				"weight"	"700"
-				"yres"		"768 1023"
-				"dropshadow"	"0"
-			}
-			"4"
-			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"20"
-				"weight"	"700"
-				"yres"		"1024 1199"
-				"dropshadow"	"0"
-			}
-			"5"
-			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"24"
-				"weight"	"700"
-				"yres"		"1200 10000"
-				"dropshadow"	"0"
+				"name" "gamefont"
+				"tall" "8"
+				"antialias" "1"
 			}
 		}
 		"ChatFont"
 		{
 			"1"
 			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"12"
-				"weight"	"700"
-				"yres"		"480 599"
-				"dropshadow"	"1"
-			}
-			"2"
-			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"13"
-				"weight"	"700"
-				"yres"		"600 767"
-				"dropshadow"	"1"
-			}
-			"3"
-			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"14"
-				"weight"	"700"
-				"yres"		"768 1023"
-				"dropshadow"	"1"
-			}
-			"4"
-			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"20"
-				"weight"	"700"
-				"yres"		"1024 1199"
-				"dropshadow"	"1"
-			}
-			"5"
-			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"24"
-				"weight"	"700"
-				"yres"		"1200 10000"
-				"dropshadow"	"1"
+				"name" "gamefont"
+				"tall" "7"
+				"antialias" "1"
 			}
 		}
 		"ChatMiniFont"
 		{
 			"1"
 			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"10"
-				"weight"	"700"
-				"yres"		"480 599"
-				"dropshadow"	"1"
-			}
-			"2"
-			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"10"
-				"weight"	"700"
-				"yres"		"600 767"
-				"dropshadow"	"1"
-			}
-			"3"
-			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"13"
-				"weight"	"700"
-				"yres"		"768 1023"
-				"dropshadow"	"1"
-			}
-			"4"
-			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"14"
-				"weight"	"700"
-				"yres"		"1024 1199"
-				"dropshadow"	"1"
-			}
-			"5"
-			{
-				"name"		"MingLiU-ExtB"
-				"tall"		"15"
-				"weight"	"700"
-				"yres"		"1200 10000"
-				"dropshadow"	"1"
+				"name" "gamefont"
+				"tall" "7"
+				"antialias" "1"
 			}
 		}
 

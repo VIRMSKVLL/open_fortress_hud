@@ -6,7 +6,7 @@
 		"fieldName"		"FreezePanelBase"
 		"xpos"			"r287"
 		"ypos"			"202"		
-		"wide"			"280"		
+		"wide"			"380"
 		"tall"			"100"		
 		"visible"		"1"
 	
@@ -55,7 +55,7 @@
 		{
 			"ControlName"	"CTFFreezePanelHealth"
 			"fieldName"		"FreezePanelHealth"
-			"xpos"			"9"
+			"xpos"			"13"
 			"ypos"			"72"
 			"zpos"			"10"
 			"wide"			"120"
@@ -76,7 +76,7 @@
 			"xpos"			"8"
 			"ypos"			"73"
 			"zpos"			"5"
-			"wide"			"32"
+			"wide"			"52"
 			"tall"			"20"
 			"visible"		"1"
 			
@@ -106,7 +106,7 @@
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"Seperator"
-			"xpos"			"40"
+			"xpos"			"60"
 			"ypos"			"74"
 			"zpos"			"10"
 			"wide"			"1"

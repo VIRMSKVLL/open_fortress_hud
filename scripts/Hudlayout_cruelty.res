@@ -424,13 +424,13 @@
 
 		"TextFont"		"VKillFont"
 
-		"TeamBlue"		"0 0 150 255"
-		"TeamRed"		"130 0 0 255"
+		"TeamBlue"		"113 139 150 255"
+		"TeamRed"		"240 104 111 255"
 		"IconColor"		"255 255 255 255"
-		"LocalPlayerColor"	"255 0 255 255"
+		"LocalPlayerColor"	"245 202 159 255"
 
-		"BaseBackgroundColor"		"42 42 50 120"
-		"LocalBackgroundColor"	"235 235 245 120"
+		"BaseBackgroundColor"		"18 28 33 150"
+		"LocalBackgroundColor"	"56 73 80 200"
 	}
 
 	HudVehicle
@@ -795,7 +795,7 @@
 		"fieldName"				"FreezePanel"
 		"visible"				"1"
 		"enabled"				"1"
-		"xpos"					"0"
+		"xpos"					"-300"
 		"ypos"					"0"
 		"wide"					"f0"
 		"tall"					"480"
@@ -1025,7 +1025,7 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"xpos"					"c-320"
-		"ypos"					"90"
+		"ypos"					"40"
 		"wide"					"640"
 		"tall"					"100"
 	}

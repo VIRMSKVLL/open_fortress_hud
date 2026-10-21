@@ -41,7 +41,7 @@
 		"visible_minmode" "1"
 		"enabled_minmode" "1"
 		"xpos" "c-26"
-		"ypos" "c130"
+		"ypos" "c68"
 		"ypos_minmode" "c115"
 		"zpos" "0"
 		"wide" "52"

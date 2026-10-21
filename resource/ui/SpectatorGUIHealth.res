@@ -68,8 +68,8 @@
 		"enabled"		"1"
 		"labeltext"		"%Health%"
 		"textAlignment"		"center"
-		"font"			"surface23"
-		"fgcolor_override" "0 0 126 255"
+		"font"			"VKillFont"
+		"fgcolor_override" "230 248 239 255"
 	}
 	"PlayerStatusHealthValueTargetIDshadow"
 	{
@@ -84,7 +84,7 @@
 		"enabled"		"1"
 		"labeltext"		"%Health%"
 		"textAlignment"		"center"
-		"font"			"surface23"
+		"font"			"VKillFontTiny"
 		"fgcolor_override" "0 0 0 255"
 	}
 }

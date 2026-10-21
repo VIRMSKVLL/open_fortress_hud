@@ -42,7 +42,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"WaitingForPlayersLabel"
-		"xpos"			"27"
+		"xpos"			"64"
 		"ypos"			"8"
 		"zpos"			"5"
 		"wide"			"40"
@@ -54,10 +54,9 @@
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"wrap"			"0"
-		"font"			"surface10"
+		"font"			"VKillFont"
 		"fgcolor"		"255 255 255 255"
 	}	
-	
 	"WaitingForPlayersBG"
 	{
 		"ControlName"	"ImagePanel"

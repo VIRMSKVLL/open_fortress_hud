@@ -8,39 +8,40 @@
 		"ypos"			"0"
 		"wide"			"600"
 		"tall"			"516"
-		"autoResize"	"0"
+		"autoResize"	"3"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"		"0"
-		"medal_width"		"12"
-		"medal_column_width" "18"
-		"avatar_width"		"55"
+		"medal_width"		"8"
+		"medal_column_width" "12"
+		"avatar_width"		"25"
 		"spacer"			"2"
-		"name_width"		"118"
+		"name_width"		"140"
 		"nemesis_width"		"15"
 		"class_width"		"15"
-		"score_width"		"20"
-		"ping_width"		"20"
+		"score_width"		"25"
+		"ping_width"		"40"
 		"killstreak_width"	"12"
 		"killstreak_image_width" "12"
+		"font"						"VKillFontTiny"
 	}
 	
 	"BluePlayerList"
 	{
 		"ControlName"				"SectionedListPanel"
 		"fieldName"					"BluePlayerList"
-		"xpos"						"45"
+		"xpos"						"0"
 		"ypos"						"144"
 		"zpos"						"20"
-		"wide"						"255"
+		"wide"						"300"
 		"tall"						"192"
 		"pinCorner"					"0"
 		"visible"					"1"
 		"enabled"					"1"
 		"tabPosition"				"0"
 		"autoresize"				"3"
-		"linespacing"				"15"
+		"linespacing"				"14"
 		"fgcolor"					"blue"
 	}
 	
@@ -51,14 +52,14 @@
 		"xpos"						"300"
 		"ypos"						"144"
 		"zpos"						"20"
-		"wide"						"255"
+		"wide"						"300"
 		"tall"						"192"
 		"pinCorner"					"0"
 		"visible"					"1"
 		"enabled"					"1"
 		"tabPosition"				"0"
 		"autoresize"				"3"
-		"linespacing"				"15"
+		"linespacing"				"14"
 		"textcolor"					"red"
 	}
 	
@@ -66,9 +67,9 @@
 	{
 		"ControlName"				"ScalableImagePanel"
 		"fieldName"					"BlueScoreBG"
-		"xpos"						"45"
+		"xpos"						"0"
 		"ypos"						"124"
-		"wide"						"254"
+		"wide"						"300"
 		"tall"						"20"
 		"autoResize"				"0"
 		"pinCorner"					"0"
@@ -91,9 +92,9 @@
 	{
 		"ControlName"				"ScalableImagePanel"
 		"fieldName"					"RedScoreBG"
-		"xpos"						"299"
+		"xpos"						"300"
 		"ypos"						"124"
-		"wide"						"256"
+		"wide"						"300"
 		"tall"						"20"
 		"autoResize"				"0"
 		"pinCorner"					"0"
@@ -116,10 +117,10 @@
 	{
 		"ControlName"				"ScalableImagePanel"
 		"fieldName"					"MainBG"
-		"xpos"						"45"
+		"xpos"						"0"
 		"ypos"						"144"
 		"zpos"						"0"
-		"wide"						"510"
+		"wide"						"600"
 		"tall"						"206"
 		"autoResize"				"0"
 		"pinCorner"					"0"
@@ -173,12 +174,12 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"BlueTeamLabel"
-		"font"						"VKillFont"
+		"font"						"VKillFontTiny"
 		"fgcolor" 					"255 255 255 255"
 		"labelText"					"%blueteamname%"
 		"textAlignment"				"west"
 		"xpos"						"50"
-		"ypos"						"125"
+		"ypos"						"126"
 		"zpos"						"5"
 		"wide"						"120"
 		"tall"						"18"
@@ -192,18 +193,43 @@
 			"visible"				"0"
 		}
 	}
+
+	"BlueTeamLabelDropshadow"
+	{
+		"ControlName"				"CExLabel"
+		"fieldName"					"BlueTeamLabel"
+		"font"						"VKillFontTiny"
+		"fgcolor" 					"0 0 0 255"
+		"labelText"					"%blueteamname%"
+		"textAlignment"				"west"
+		"xpos"						"51"
+		"ypos"						"127"
+		"zpos"						"5"
+		"wide"						"120"
+		"tall"						"18"
+		"autoResize"				"0"
+		"pinCorner"					"0"
+		"visible"					"1"
+		"enabled"					"1"
+
+		if_mvm
+		{
+			"visible"				"0"
+		}
+	}
+
 	
 	"BlueTeamScore"
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"BlueTeamScore"
-		"font"						"VKillFont"
+		"font"						"VKillFontTiny"
 		"fgcolor" 					"255 255 255 255"
 		"labelText"					"%blueteamscore%"
 		"textAlignment"				"east"
 		"xpos"						"189"
-		"ypos"						"98"
-		"zpos"						"4"
+		"ypos"						"112"
+		"zpos"						"8"
 		"wide"						"100"
 		"tall"						"45"
 		"autoResize"				"0"
@@ -221,13 +247,13 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"BlueTeamScoreDropshadow"
-		"font"						"VKillFont"
+		"font"						"VKillFontTiny"
 		"fgcolor" 					"black"
 		"labelText"					"%blueteamscore%"
 		"textAlignment"				"east"
 		"xpos"						"190"
-		"ypos"						"99"
-		"zpos"						"4"
+		"ypos"						"113"
+		"zpos"						"6"
 		"wide"						"100"
 		"tall"						"45"
 		"autoResize"				"0"
@@ -245,14 +271,15 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"BlueTeamPlayerCount"
-		"font"						"VKillFont"
+		"font"						"VKillFontTiny"
 		"fgcolor" 					"255 255 255 255"
 		"labelText"					"%blueteamplayercount%"
 		"textAlignment"				"east"
 		"xpos"						"125"
-		"ypos"						"125"
+		"ypos"						"126"
 		"wide"						"100"
 		"tall"						"18"
+		"zpos"						"8"
 		"autoResize"				"0"
 		"pinCorner"					"0"
 		"visible"					"1"
@@ -263,17 +290,42 @@
 			"visible"				"0"
 		}
 	}
+
+
+	"BlueTeamPlayerCountDropshadow"
+	{
+		"ControlName"				"CExLabel"
+		"fieldName"					"BlueTeamPlayerCount"
+		"font"						"VKillFontTiny"
+		"fgcolor" 					"0 0 0 255"
+		"labelText"					"%blueteamplayercount%"
+		"textAlignment"				"east"
+		"xpos"						"126"
+		"ypos"						"127"
+		"wide"						"100"
+		"tall"						"18"
+		"zpos"						"4"
+		"autoResize"				"0"
+		"pinCorner"					"0"
+		"visible"					"1"
+		"enabled"					"1"
+
+		if_mvm
+		{
+			"visible"				"0"
+		}
+	}
 	
 	"RedTeamLabel"
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"RedTeamLabel"
-		"font"						"VKillFont"
+		"font"						"VKillFontTiny"
 		"fgcolor" 					"255 255 255 255"
 		"labelText"					"%redteamname%"
 		"textAlignment"				"east"
 		"xpos"						"430"
-		"ypos"						"125"
+		"ypos"						"126"
 		"zpos"						"5"
 		"wide"						"120"
 		"tall"						"18"
@@ -287,18 +339,41 @@
 			"visible"				"0"
 		}
 	}
+	"RedTeamLabelDropshadow"
+	{
+		"ControlName"				"CExLabel"
+		"fieldName"					"RedTeamLabel"
+		"font"						"VKillFontTiny"
+		"fgcolor" 					"0 0 0 255"
+		"labelText"					"%redteamname%"
+		"textAlignment"				"east"
+		"xpos"						"431"
+		"ypos"						"127"
+		"zpos"						"5"
+		"wide"						"120"
+		"tall"						"18"
+		"autoResize"				"0"
+		"pinCorner"					"0"
+		"visible"					"1"
+		"enabled"					"1"
+
+		if_mvm
+		{
+			"visible"				"0"
+		}
+	}
 	
 	"RedTeamScore"
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"RedTeamScore"
-		"font"						"VKillFont"
+		"font"						"VKillFontTiny"
 		"fgcolor" 					"255 255 255 255"
 		"labelText"					"%redteamscore%"
 		"textAlignment"				"west"
 		"xpos"						"310"
-		"ypos"						"98"
-		"zpos"						"4"
+		"ypos"						"112"
+		"zpos"						"8"
 		"wide"						"100"
 		"tall"						"45"
 		"autoResize"				"0"
@@ -316,12 +391,12 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"RedTeamScoreDropshadow"
-		"font"						"VKillFont"
+		"font"						"VKillFontTiny"
 		"fgcolor"					"black"
 		"labelText"					"%redteamscore%"
 		"textAlignment"				"west"
 		"xpos"						"311"
-		"ypos"						"99"
+		"ypos"						"113"
 		"zpos"						"4"
 		"wide"						"100"
 		"tall"						"45"
@@ -340,14 +415,15 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"RedTeamPlayerCount"
-		"font"						"VKillFont"
+		"font"						"VKillFontTiny"
 		"fgcolor"					"255 255 255 255"
 		"labelText"					"%redteamplayercount%"
 		"textAlignment"				"west"
 		"xpos"						"375"
-		"ypos"						"125"
+		"ypos"						"126"
 		"wide"						"100"
 		"tall"						"18"
+		"zpos"						"8"
 		"autoResize"				"0"
 		"pinCorner"					"0"
 		"visible"					"1"
@@ -359,17 +435,41 @@
 		}
 	}
 	
+		"RedTeamPlayerCountDropshadow"
+	{
+		"ControlName"				"CExLabel"
+		"fieldName"					"RedTeamPlayerCount"
+		"font"						"VKillFontTiny"
+		"fgcolor"					"0 0 0 255"
+		"labelText"					"%redteamplayercount%"
+		"textAlignment"				"west"
+		"xpos"						"376"
+		"ypos"						"127"
+		"wide"						"100"
+		"tall"						"18"
+		"zpos"						"4"
+		"autoResize"				"0"
+		"pinCorner"					"0"
+		"visible"					"1"
+		"enabled"					"1"
+
+		if_mvm
+		{
+			"visible"				"0"
+		}
+	}
+
 	"ServerLabel"
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"ServerLabel"
-		"font"						"VKillFont"
+		"font"						"VKillFontTiny"
 		"fgcolor" 					"255 255 255 255"
 		"labelText"					"%server%"
 		"textAlignment"				"west"
 		"xpos"						"46"
-		"ypos"						"111"
-		"zpos"						"-10"
+		"ypos"						"330"
+		"zpos"						"10"
 		"wide"						"211"
 		"tall"						"15"
 		"autoResize"				"0"
@@ -389,12 +489,13 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"ServerTimeLeft"
-		"font"						"VKillFont"
+		"font"						"VKillFontTiny"
 		"fgcolor" 					"255 255 255 255"
 		"labelText"					"%servertimeleft%"
 		"textAlignment"				"east"
 		"xpos"						"253"
-		"ypos"						"111"
+		"ypos"						"330"
+		"zpos"						"10"
 		"wide"						"300"
 		"tall"						"15"
 		"autoResize"				"0"
@@ -432,7 +533,7 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"Spectators"
-		"font"						"VKillFont"
+		"font"						"VKillFontTiny"
 		"fgcolor" 					"255 255 255 255"
 		"labelText"					"%spectators%"
 		"textAlignment"				"west"
@@ -456,7 +557,7 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"SpectatorsInQueue"
-		"font"						"VKillFont"
+		"font"						"VKillFontTiny"
 		"labelText"					"%waitingtoplay%"
 		"textAlignment"				"west"
 		"xpos"						"48"
@@ -480,10 +581,10 @@
 	{
 		"ControlName"				"ScalableImagePanel"
 		"fieldName"					"shadedbar"
-		"xpos"						"45"
+		"xpos"						"0"
 		"ypos"						"350"
 		"zpos"						"0"
-		"wide"						"510"
+		"wide"						"600"
 		"tall"						"50"
 		"autoResize"				"0"
 		"pinCorner"					"0"
@@ -508,7 +609,7 @@
 	{
 		"ControlName"				"CExLabel"
 		"fieldName"					"mapname"
-		"font"						"VKillFont"
+		"font"						"VKillFontTiny"
 		"labelText"					"%mapname%"
 		"textAlignment"				"center"
 		"xpos"						"460"
@@ -586,7 +687,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"KillsWhite"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"%kills%"
 			"textAlignment"		"east"
@@ -609,7 +710,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"Separator"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			":"
 			"textAlignment"		"center"
@@ -625,7 +726,7 @@
 			
 			if_mvm
 			{
-				"font"						"VKillFont"
+				"font"						"VKillFontTiny"
 			}
 		}
 		
@@ -633,7 +734,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"DeathsWhite"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"%deaths%"
 			"textAlignment"		"west"
@@ -656,7 +757,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"CapturesLabel"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"#TF_ScoreBoard_CapturesLabel"
 			"textAlignment"		"east"
@@ -678,7 +779,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"CapturesWhite"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"%captures%"
 			"textAlignment"		"west"
@@ -701,7 +802,7 @@
 			"ControlName"		"CExLabel"
 			"fieldName"			"AssistsLabel"
 			"fgcolor" 			"255 255 255 255"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"labelText"			"#TF_ScoreBoard_AssistsLabel"
 			"textAlignment"		"east"
 			"xpos"				"175"
@@ -722,7 +823,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"AssistsWhite"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"%assists%"
 			"textAlignment"		"west"
@@ -744,7 +845,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"DestructionLabel"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"#TF_ScoreBoard_DestructionLabel"
 			"textAlignment"		"east"
@@ -766,7 +867,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"DestructionWhite"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"%destruction%"
 			"textAlignment"		"west"
@@ -788,7 +889,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"DefensesLabel"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"#TF_ScoreBoard_DefensesLabel"
 			"textAlignment"		"east"
@@ -811,7 +912,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"DefensesWhite"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"%defenses%"
 			"textAlignment"		"west"
@@ -833,7 +934,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"DominationLabel"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"#TF_ScoreBoard_DominationLabel"
 			"textAlignment"		"east"
@@ -855,7 +956,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"DominationWhite"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"%dominations%"
 			"textAlignment"		"west"
@@ -877,7 +978,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"RevengeLabel"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"#TF_ScoreBoard_RevengeLabel"
 			"textAlignment"		"east"
@@ -899,7 +1000,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"RevengeWhite"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"%Revenge%"
 			"textAlignment"		"west"
@@ -921,7 +1022,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"InvulnLabel"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"#TF_ScoreBoard_InvulnLabel"
 			"textAlignment"		"east"
@@ -943,7 +1044,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"InvulnWhite"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"%invulns%"
 			"textAlignment"		"west"
@@ -965,7 +1066,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"HeadshotsLabel"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"#TF_ScoreBoard_HeadshotsLabel"
 			"textAlignment"		"east"
@@ -987,7 +1088,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"HeadshotsWhite"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"%headshots%"
 			"textAlignment"		"west"
@@ -1009,7 +1110,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"TeleportsLabel"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"#TF_ScoreBoard_TeleportsLabel"
 			"textAlignment"		"east"
@@ -1031,7 +1132,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"TeleportsWhite"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"%teleports%"
 			"textAlignment"		"west"
@@ -1053,7 +1154,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"HealingLabel"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"#TF_ScoreBoard_HealingLabel"
 			"textAlignment"		"east"
@@ -1075,7 +1176,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"HealingWhite"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"%healing%"
 			"textAlignment"		"west"
@@ -1097,7 +1198,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"BackstabsLabel"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"#TF_ScoreBoard_BackstabsLabel"
 			"textAlignment"		"east"
@@ -1119,7 +1220,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"BackstabsWhite"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"%backstabs%"
 			"textAlignment"		"west"
@@ -1141,7 +1242,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"BonusLabel"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"#TF_ScoreBoard_BonusLabel"
 			"textAlignment"		"east"
@@ -1164,7 +1265,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"BonusWhite"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"%bonus%"
 			"textAlignment"		"west"
@@ -1186,7 +1287,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"SupportLabel"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"#TF_ScoreBoard_Support"
 			"textAlignment"		"east"
@@ -1209,7 +1310,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"SupportWhite"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"%support%"
 			"textAlignment"		"west"
@@ -1231,7 +1332,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"DamageLabel"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"#TF_ScoreBoard_Damage"
 			"textAlignment"		"east"
@@ -1254,7 +1355,7 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"			"DamageWhite"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"fgcolor" 			"255 255 255 255"
 			"labelText"			"%damage%"
 			"textAlignment"		"west"
@@ -1457,7 +1558,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"DuelingLabel"
-			"font"						"VKillFont"
+			"font"						"VKillFontTiny"
 			"labelText"		"#TF_ScoreBoard_Dueling"
 			"textAlignment"	"center"
 			"xpos"			"78"
@@ -1545,7 +1646,7 @@
 				"wrap"			"0"
 				"labelText"		"%playername%"
 				"textAlignment"	"east"
-				"font"						"VKillFontTiny"
+				"font"						"VKillFontTinyTiny"
 			}
 			"Score"
 			{
@@ -1562,7 +1663,7 @@
 				"pinCorner"		"0"
 				"visible"		"1"
 				"enabled"		"1"
-				"font"						"VKillFont"
+				"font"						"VKillFontTiny"
 				"fgcolor"		"255 255 255 255"
 			}
 		}
@@ -1625,7 +1726,7 @@
 				"wrap"			"0"
 				"labelText"		"%playername%"
 				"textAlignment"	"west"
-				"font"						"VKillFontTiny"
+				"font"						"VKillFontTinyTiny"
 			}
 			"Score"
 			{
@@ -1642,7 +1743,7 @@
 				"pinCorner"		"0"
 				"visible"		"1"
 				"enabled"		"1"
-				"font"						"VKillFont"
+				"font"						"VKillFontTiny"
 				"fgcolor"		"255 255 255 255"
 			}
 		}		

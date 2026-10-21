@@ -43,7 +43,7 @@
 	{	
 		"ControlName"	"ContinuousProgressBar"
 		"fieldName"		"ChargeMeter"
-		"font"			"ChargeMeter"
+		"font"			"VKillFont"
 		"xpos"			"1"
 		"ypos"			"4"
 		"zpos"			"2"
