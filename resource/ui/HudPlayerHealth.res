@@ -128,12 +128,11 @@
 	}
 
 
-
-	"PlayerStatusHealthValue"
+"PlayerStatusHealthValue"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValue"
-		"xpos"		"160"
+		"xpos"		"176"
 		"xpos_minmode"		"140"
 		"ypos"		"155"
 		"ypos_minmode"		"133"
@@ -153,7 +152,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValueShadow"
-		"xpos"		"160"
+		"xpos"		"176"
 		"xpos_minmode"		"140"
 		"ypos"		"166"
 		"ypos_minmode"		"144"
