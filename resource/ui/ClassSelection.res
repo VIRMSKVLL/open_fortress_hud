@@ -1039,7 +1039,7 @@
 		"labelText"		"%numScout%"
 		"textAlignment"	"east"
 		"font"			"surface11"
-		"fgcolor"		"248 156 255 255"
+		"fgcolor"		"239 174 132 255"
 	}	
 	
 	"numSoldier"
@@ -1059,7 +1059,7 @@
 		"labelText"		"%numSoldier%"
 		"textAlignment"	"east"
 		"font"			"surface11"
-		"fgcolor"		"248 156 255 255"
+		"fgcolor"		"239 174 132 255"
 	}		
 	
 	"numPyro"
@@ -1079,7 +1079,7 @@
 		"labelText"		"%numPyro%"
 		"textAlignment"	"east"
 		"font"			"surface11"
-		"fgcolor"		"248 156 255 255"
+		"fgcolor"		"239 174 132 255"
 	}			
 	
 	"numDemoman"
@@ -1099,7 +1099,7 @@
 		"labelText"		"%numDemoman%"
 		"textAlignment"	"east"
 		"font"			"surface11"
-		"fgcolor"		"248 156 255 255"
+		"fgcolor"		"239 174 132 255"
 	}				
 	
 	"numHeavy"
@@ -1119,7 +1119,7 @@
 		"labelText"		"%numHeavy%"
 		"textAlignment"	"east"
 		"font"			"surface11"
-		"fgcolor"		"248 156 255 255"
+		"fgcolor"		"239 174 132 255"
 	}					
 	
 	"numEngineer"
@@ -1139,7 +1139,7 @@
 		"labelText"		"%numEngineer%"
 		"textAlignment"	"east"
 		"font"			"surface11"
-		"fgcolor"		"248 156 255 255"
+		"fgcolor"		"239 174 132 255"
 	}						
 	
 	"numMedic"
@@ -1159,7 +1159,7 @@
 		"labelText"		"%numMedic%"
 		"textAlignment"	"east"
 		"font"			"surface11"
-		"fgcolor"		"248 156 255 255"
+		"fgcolor"		"239 174 132 255"
 	}							
 	
 	"numSniper"
@@ -1179,7 +1179,7 @@
 		"labelText"		"%numSniper%"
 		"textAlignment"	"east"
 		"font"			"surface11"
-		"fgcolor"		"248 156 255 255"
+		"fgcolor"		"239 174 132 255"
 	}						
 	
 	"numSpy"
@@ -1199,7 +1199,7 @@
 		"labelText"		"%numSpy%"
 		"textAlignment"	"east"
 		"font"			"surface11"
-		"fgcolor"		"248 156 255 255"
+		"fgcolor"		"239 174 132 255"
 	}
 	
 	"MvMUpgradeImageScout"
